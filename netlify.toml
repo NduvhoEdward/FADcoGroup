@@ -1,0 +1,74 @@
+### netlify.toml (for Netlify deployment)
+```toml
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
+
+[build.environment]
+  NODE_VERSION = "18"
+```
+
+## 🚀 Quick Start Guide
+
+1. **Clone and Install**
+   ```bash
+   git clone <your-repo>
+   cd architecture-website
+   npm install
+   ```
+
+2. **Set up Sanity**
+   ```bash
+   npm install -g @sanity/cli
+   sanity init
+   # Follow prompts to create new project
+   ```
+
+3. **Environment Variables**
+   ```bash
+   cp .env.example .env.local
+   # Add your Sanity project details
+   ```
+
+4. **Run Development Server**
+   ```bash
+   npm run dev
+   ```
+
+5. **Deploy to Vercel**
+   ```bash
+   vercel --prod
+   ```
+
+## 📝 Content Management
+
+### Sample Sanity Documents
+
+**Project Example:**
+```javascript
+{
+  "title": "Modern Family Home",
+  "slug": { "current": "modern-family-home" },
+  "description": "A contemporary 4-bedroom family home featuring open-plan living and sustainable design elements.",
+  "category": "residential",
+  "location": "Suburb, City",
+  "completionDate": "2023-08-15",
+  // Images and content...
+}
+```
+
+**Blog Post Example:**
+```javascript
+{
+  "title": "Sustainable Architecture Trends 2024",
+  "slug": { "current": "sustainable-architecture-trends-2024" },
+  "excerpt": "Explore the latest trends in sustainable architecture and green building practices.",
+  "publishedAt": "2024-01-15T10:00:00Z",
+  // Content and images...
+}
+```
