@@ -4,6 +4,62 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
+:root {
+  /* Light mode colors */
+  --color-primary-50: #f8fafc;
+  --color-primary-100: #f1f5f9;
+  --color-primary-200: #e2e8f0;
+  --color-primary-300: #cbd5e1;
+  --color-primary-400: #94a3b8;
+  --color-primary-500: #64748b;
+  --color-primary-600: #475569;
+  --color-primary-700: #334155;
+  --color-primary-800: #1e293b;
+  --color-primary-900: #0f172a;
+  
+  --color-accent-400: #fbbf24;
+  --color-accent-500: #f59e0b;
+  --color-accent-600: #d97706;
+  
+  --color-secondary-500: #10b981;
+  --color-secondary-600: #059669;
+  
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8fafc;
+  --text-primary: #0f172a;
+  --text-secondary: #334155;
+  --text-muted: #64748b;
+  --border-color: #e2e8f0;
+}
+
+[data-theme="dark"] {
+  /* Dark mode colors */
+  --color-primary-50: #0f172a;
+  --color-primary-100: #1e293b;
+  --color-primary-200: #334155;
+  --color-primary-300: #475569;
+  --color-primary-400: #64748b;
+  --color-primary-500: #94a3b8;
+  --color-primary-600: #cbd5e1;
+  --color-primary-700: #e2e8f0;
+  --color-primary-800: #f1f5f9;
+  --color-primary-900: #f8fafc;
+  
+  --color-accent-400: #fbbf24;
+  --color-accent-500: #f59e0b;
+  --color-accent-600: #d97706;
+  
+  --color-secondary-500: #10b981;
+  --color-secondary-600: #059669;
+  
+  --bg-primary: #0f172a;
+  --bg-secondary: #1e293b;
+  --text-primary: #f8fafc;
+  --text-secondary: #e2e8f0;
+  --text-muted: #94a3b8;
+  --border-color: #334155;
+}
+
 @layer base {
   html {
     scroll-behavior: smooth;
@@ -11,16 +67,19 @@
   
   body {
     font-family: 'Inter', sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
 }
 
 @layer components {
   .btn-primary {
-    @apply bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-lg font-medium transition-colors duration-200;
+    @apply bg-accent-500 hover:bg-accent-600 text-white px-6 py-3 rounded-lg font-medium transition-all duration-200 transform hover:scale-105;
   }
   
   .btn-secondary {
-    @apply bg-white text-primary-600 border border-primary-600 hover:bg-primary-50 px-6 py-3 rounded-lg font-medium transition-colors duration-200;
+    @apply bg-transparent text-accent-500 border-2 border-accent-500 hover:bg-accent-500 hover:text-white px-6 py-3 rounded-lg font-medium transition-all duration-200;
   }
   
   .section-padding {
@@ -29,5 +88,19 @@
   
   .container-custom {
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .card {
+    @apply bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700;
+  }
+  
+  .dark-mode-toggle {
+    @apply fixed top-24 right-4 z-50 p-3 rounded-full shadow-lg transition-all duration-300;
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+  }
+  
+  .dark-mode-toggle:hover {
+    transform: scale(1.1);
   }
 }

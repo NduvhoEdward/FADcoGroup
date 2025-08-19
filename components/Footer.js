@@ -3,76 +3,94 @@ import { Facebook, Twitter, Instagram, Linkedin, Mail, Phone, MapPin } from 'luc
 
 export default function Footer() {
   return (
-    <footer className="bg-primary-900 text-white">
+    <footer className="bg-gray-900 dark:bg-black text-white transition-colors duration-300">
       <div className="container-custom py-16">
         <div className="grid md:grid-cols-4 gap-8">
           {/* Company Info */}
-          <div>
-            <Link href="/" className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-accent-500 rounded"></div>
-              <span className="text-xl font-bold">Elite A&C</span>
+          <div className="space-y-4">
+            <Link href="/" className="flex items-center space-x-3">
+              <div className="w-10 h-10 bg-accent-500 rounded-lg flex items-center justify-center">
+                <span className="text-white font-bold text-lg">F</span>
+              </div>
+              <div className="flex flex-col">
+                <span className="text-xl font-bold">FADco</span>
+                <span className="text-xs text-gray-400">Fiya Architectural Designs</span>
+              </div>
             </Link>
-            <p className="text-primary-300 mb-4">
-              Creating exceptional architectural designs and construction solutions 
-              that stand the test of time.
+            <p className="text-gray-300 leading-relaxed">
+              Giving your dreams a shape of reality. Proudly South African, 
+              we are architects of innovation and builders of excellence.
             </p>
             <div className="flex space-x-4">
-              <Facebook size={20} className="text-primary-300 hover:text-accent-500 cursor-pointer" />
-              <Twitter size={20} className="text-primary-300 hover:text-accent-500 cursor-pointer" />
-              <Instagram size={20} className="text-primary-300 hover:text-accent-500 cursor-pointer" />
-              <Linkedin size={20} className="text-primary-300 hover:text-accent-500 cursor-pointer" />
+              <Facebook size={20} className="text-gray-400 hover:text-accent-500 cursor-pointer transition-colors" />
+              <Twitter size={20} className="text-gray-400 hover:text-accent-500 cursor-pointer transition-colors" />
+              <Instagram size={20} className="text-gray-400 hover:text-accent-500 cursor-pointer transition-colors" />
+              <Linkedin size={20} className="text-gray-400 hover:text-accent-500 cursor-pointer transition-colors" />
             </div>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
-            <ul className="space-y-2">
-              <li><Link href="/about" className="text-primary-300 hover:text-white">About Us</Link></li>
-              <li><Link href="/services" className="text-primary-300 hover:text-white">Services</Link></li>
-              <li><Link href="/projects" className="text-primary-300 hover:text-white">Projects</Link></li>
-              <li><Link href="/contact" className="text-primary-300 hover:text-white">Contact</Link></li>
+            <h3 className="text-lg font-semibold mb-4 text-white">Quick Links</h3>
+            <ul className="space-y-3">
+              <li><Link href="/about" className="text-gray-300 hover:text-accent-500 transition-colors">About FADco</Link></li>
+              <li><Link href="/services" className="text-gray-300 hover:text-accent-500 transition-colors">Our Services</Link></li>
+              <li><Link href="/projects" className="text-gray-300 hover:text-accent-500 transition-colors">Portfolio</Link></li>
+              <li><Link href="/contact" className="text-gray-300 hover:text-accent-500 transition-colors">Get Quote</Link></li>
             </ul>
           </div>
 
           {/* Services */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Services</h3>
+            <h3 className="text-lg font-semibold mb-4 text-white">Our Services</h3>
             <ul className="space-y-2">
-              <li className="text-primary-300">Architectural Design</li>
-              <li className="text-primary-300">Construction Management</li>
-              <li className="text-primary-300">Residential Projects</li>
-              <li className="text-primary-300">Commercial Construction</li>
-              <li className="text-primary-300">Renovation & Remodeling</li>
+              <li className="text-gray-300">Architectural Design</li>
+              <li className="text-gray-300">Plan Submissions</li>
+              <li className="text-gray-300">Construction Services</li>
+              <li className="text-gray-300">Home Building (NHBRC)</li>
+              <li className="text-gray-300">Finishing Services</li>
             </ul>
           </div>
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Contact Info</h3>
+            <h3 className="text-lg font-semibold mb-4 text-white">Contact Info</h3>
             <div className="space-y-3">
-              <div className="flex items-center space-x-2">
-                <MapPin size={16} className="text-accent-500" />
-                <span className="text-primary-300">123 Architecture Ave, City, State 12345</span>
+              <div className="flex items-start space-x-3">
+                <MapPin size={18} className="text-accent-500 mt-0.5 flex-shrink-0" />
+                <span className="text-gray-300 text-sm">
+                  77 Fulham Road, Brixton,<br />
+                  Johannesburg, 2092
+                </span>
               </div>
-              <div className="flex items-center space-x-2">
+              <div className="flex items-center space-x-3">
                 <Phone size={16} className="text-accent-500" />
-                <span className="text-primary-300">+1 (555) 123-4567</span>
+                <div className="text-gray-300 text-sm">
+                  <div>Office: +27 11 839 6612</div>
+                  <div>Mobile: +27 82 595 3955</div>
+                </div>
               </div>
-              <div className="flex items-center space-x-2">
+              <div className="flex items-center space-x-3">
                 <Mail size={16} className="text-accent-500" />
-                <span className="text-primary-300">info@elitearchitecture.com</span>
+                <span className="text-gray-300 text-sm">fiyadesigns1@gmail.com</span>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="border-t border-primary-800 mt-12 pt-8 text-center">
-          <p className="text-primary-300">
-            © 2024 Elite Architecture & Construction. All rights reserved.
-          </p>
+        {/* Bottom Section */}
+        <div className="border-t border-gray-800 mt-12 pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <p className="text-gray-400 text-sm">
+              © 2025 FADco - Fiya Architectural Designs and Construction. All rights reserved.
+            </p>
+            <div className="flex space-x-6 text-sm">
+              <span className="text-gray-400">CIPC Registered</span>
+              <span className="text-gray-400">NHBRC Certified</span>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
   )
-}
+} 
