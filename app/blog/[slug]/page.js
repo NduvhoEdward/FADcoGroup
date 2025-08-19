@@ -1,7 +1,6 @@
 import { notFound } from 'next/navigation'
 import Image from 'next/image'
 import Link from 'next/link'
-import { getBlogPost } from '@/lib/sanity'
 import { Calendar, User, ArrowLeft } from 'lucide-react'
 
 export async function generateMetadata({ params }) {

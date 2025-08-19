@@ -2,7 +2,6 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { getBlogPosts } from '@/lib/sanity'
 import { Calendar, User } from 'lucide-react'
 
 export default function Blog() {

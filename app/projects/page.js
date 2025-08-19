@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { getProjects } from '@/lib/sanity'
+// import { getProjects } from '@/lib/sanity'
 
 // export const metadata = {
 //   title: 'Projects',
@@ -16,12 +16,12 @@ export default function Projects() {
 
   const categories = ['all', 'residential', 'commercial', 'renovation']
 
-  useEffect(() => {
-    getProjects().then((data) => {
-      setProjects(data)
-      setFilteredProjects(data)
-    })
-  }, [])
+  // useEffect(() => {
+  //   getProjects().then((data) => {
+  //     setProjects(data)
+  //     setFilteredProjects(data)
+  //   })
+  // }, [])
 
   const handleFilter = (category) => {
     setActiveFilter(category)

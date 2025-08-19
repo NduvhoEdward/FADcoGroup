@@ -2,14 +2,14 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { getProjects } from '@/lib/sanity'
+// import { getProjects } from '@/lib/sanity'
 
 export default function FeaturedProjects() {
   const [projects, setProjects] = useState([])
 
-  useEffect(() => {
-    getProjects(3).then(setProjects)
-  }, [])
+  // useEffect(() => {
+  //   getProjects(3).then(setProjects)
+  // }, [])
 
   return (
     <section className="section-padding bg-white">
