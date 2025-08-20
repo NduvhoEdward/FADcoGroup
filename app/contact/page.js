@@ -2,6 +2,11 @@
 import { useState } from 'react'
 import { MapPin, Phone, Mail, Clock } from 'lucide-react'
 
+// export const metadata = {
+//   title: 'Contacts',
+//   description: 'Get in touch with FADco for all your architectural and construction needs.',
+// }
+
 export default function Contact() {
   const [formData, setFormData] = useState({
     name: '',
@@ -251,14 +256,16 @@ export default function Contact() {
                 </div>
               </div>
 
-              {/* Map placeholder */}
+              {/* 
+              {/* Map placeholder 
               <div className="mt-12">
                 <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Find Us</h3>
                 <div className="bg-gray-100 dark:bg-gray-800 h-64 rounded-lg flex items-center justify-center border border-gray-200 dark:border-gray-700">
                   <p className="text-gray-600 dark:text-gray-400">Interactive map will be added here</p>
-                  {/* Replace with actual Google Maps embed */}
                 </div>
               </div>
+              */}
+              
             </div>
           </div>
         </div>

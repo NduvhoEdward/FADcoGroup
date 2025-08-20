@@ -1,12 +1,12 @@
+
 'use client'
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-// import { getProjects } from '@/lib/sanity'
 
 // export const metadata = {
 //   title: 'Projects',
-//   description: 'Explore our portfolio of architectural and construction projects',
+//   description: 'Comprehensive architectural design and construction services by FADco. From plans to construction, we give your dreams a shape of reality.',
 // }
 
 export default function Projects() {
@@ -15,13 +15,6 @@ export default function Projects() {
   const [activeFilter, setActiveFilter] = useState('all')
 
   const categories = ['all', 'residential', 'commercial', 'renovation']
-
-  // useEffect(() => {
-  //   getProjects().then((data) => {
-  //     setProjects(data)
-  //     setFilteredProjects(data)
-  //   })
-  // }, [])
 
   const handleFilter = (category) => {
     setActiveFilter(category)
@@ -33,14 +26,15 @@ export default function Projects() {
   }
 
   return (
-    <div className="min-h-screen pt-24">
+    <div className="min-h-screen pt-24 bg-background-primary transition-colors duration-300">
       <div className="container-custom">
+        {/* Page Header */}
         <div className="text-center mb-16">
-          <h1 className="text-5xl font-bold text-primary-900 mb-4">
+          <h1 className="text-5xl font-bold text-primary-900 mb-4 transition-colors duration-300">
             Our Projects
           </h1>
-          <p className="text-xl text-primary-600 max-w-3xl mx-auto">
-            A showcase of our architectural vision and construction excellence across 
+          <p className="text-xl text-primary-600 max-w-3xl mx-auto transition-colors duration-300">
+            A showcase of our architectural vision and construction excellence across
             residential and commercial projects.
           </p>
         </div>
@@ -52,10 +46,10 @@ export default function Projects() {
               <button
                 key={category}
                 onClick={() => handleFilter(category)}
-                className={`px-6 py-2 rounded-full font-medium transition-colors ${
+                className={`px-6 py-2 rounded-full font-medium transition-colors duration-300 ${
                   activeFilter === category
                     ? 'bg-primary-600 text-white'
-                    : 'bg-primary-100 text-primary-700 hover:bg-primary-200'
+                    : 'bg-background-secondary text-primary-700 hover:bg-primary-200'
                 }`}
               >
                 {category.charAt(0).toUpperCase() + category.slice(1)}
@@ -67,7 +61,10 @@ export default function Projects() {
         {/* Projects Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredProjects.map((project) => (
-            <div key={project._id} className="group">
+            <div
+              key={project._id}
+              className="group bg-background-secondary rounded-lg shadow-md overflow-hidden transition-colors duration-300 border border-[var(--border-color)]"
+            >
               <Link href={`/projects/${project.slug}`}>
                 <div className="relative h-72 rounded-lg overflow-hidden mb-4">
                   <Image
@@ -78,15 +75,17 @@ export default function Projects() {
                   />
                   <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
                 </div>
-                <h3 className="text-xl font-semibold text-primary-900 mb-2">
-                  {project.title}
-                </h3>
-                <p className="text-primary-500 text-sm mb-2 uppercase tracking-wide">
-                  {project.category}
-                </p>
-                <p className="text-primary-700 line-clamp-3">
-                  {project.description}
-                </p>
+                <div className="px-4 pb-4">
+                  <h3 className="text-xl font-semibold text-primary-900 mb-2 transition-colors duration-300">
+                    {project.title}
+                  </h3>
+                  <p className="text-primary-500 text-sm mb-2 uppercase tracking-wide transition-colors duration-300">
+                    {project.category}
+                  </p>
+                  <p className="text-primary-700 line-clamp-3 transition-colors duration-300">
+                    {project.description}
+                  </p>
+                </div>
               </Link>
             </div>
           ))}

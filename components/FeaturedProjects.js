@@ -10,9 +10,9 @@ export default function FeaturedProjects() {
   // useEffect(() => {
   //   getProjects(3).then(setProjects)
   // }, [])
-
+  
   return (
-    <section className="section-padding bg-white">
+    <section className="section-padding bg-white dark:bg-gray-900 transition-colors duration-300">
       <div className="container-custom">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-primary-900 mb-4">
