@@ -1,96 +1,212 @@
 
 'use client'
-import { useState, useEffect } from 'react'
-import Link from 'next/link'
 import Image from 'next/image'
+import Link from 'next/link'
+import { MapPin, Calendar, User } from 'lucide-react'
 
 // export const metadata = {
 //   title: 'Projects',
-//   description: 'Comprehensive architectural design and construction services by FADco. From plans to construction, we give your dreams a shape of reality.',
+//   description: 'Explore our portfolio of architectural designs and construction projects across Gauteng and beyond',
 // }
 
 export default function Projects() {
-  const [projects, setProjects] = useState([])
-  const [filteredProjects, setFilteredProjects] = useState([])
-  const [activeFilter, setActiveFilter] = useState('all')
-
-  const categories = ['all', 'residential', 'commercial', 'renovation']
-
-  const handleFilter = (category) => {
-    setActiveFilter(category)
-    if (category === 'all') {
-      setFilteredProjects(projects)
-    } else {
-      setFilteredProjects(projects.filter(p => p.category.toLowerCase() === category))
+  const projects = [
+    {
+      id: 1,
+      title: 'Modern Family Home Design',
+      client: 'Christa Roos',
+      location: 'Wilro Park, Roodepoort',
+      service: 'House plan design and drawing',
+      year: '2023',
+      description: 'A beautiful modern family home featuring open-plan living spaces, contemporary design elements, and sustainable building practices.',
+      image: '/projects/placeholder.png',
+      category: 'Residential'
+    },
+    {
+      id: 2,
+      title: 'Contemporary Soweto Residence',
+      client: 'Vincent Khumalo',
+      location: 'Glenvista, Soweto',
+      service: 'House plan design and drawing',
+      year: '2023',
+      description: 'A stunning contemporary home that blends traditional African architectural elements with modern functionality.',
+      image: '/projects/placeholder.png',
+      category: 'Residential'
+    },
+    {
+      id: 3,
+      title: 'Luxury Johannesburg Villa',
+      client: 'Lindiwe Buhlungu',
+      location: 'Alveda Ext 2, Johannesburg',
+      service: 'House plan design and drawing',
+      year: '2023',
+      description: 'An elegant villa design featuring spacious rooms, natural lighting, and premium finishes throughout.',
+      image: '/projects/placeholder.png',
+      category: 'Residential'
+    },
+    {
+      id: 4,
+      title: 'Complete Home Build & Renovation',
+      client: 'Lesley & Peter Edmonds',
+      location: 'Naturena, Johannesburg',
+      service: 'Building, Thatching, Tiling ceiling',
+      year: '2022',
+      description: 'A comprehensive construction project including traditional thatching, modern tiling, and complete interior finishing.',
+      image: '/projects/placeholder.png',
+      category: 'Construction'
+    },
+    {
+      id: 5,
+      title: 'Luxury Fourways Development',
+      client: 'Mark Maiden',
+      location: 'Fourways, Johannesburg',
+      service: 'Building & Designing',
+      year: '2022',
+      description: 'An upmarket residential development combining innovative design with premium construction standards.',
+      image: '/projects/placeholder.png',
+      category: 'Residential'
+    },
+    {
+      id: 6,
+      title: 'Innovative House Design',
+      client: 'N.E. Ramashia',
+      location: 'Johannesburg',
+      service: 'House plan design and drawing',
+      year: '2023',
+      description: 'A thoughtfully designed home that exceeded client expectations with innovative spatial planning and beautiful aesthetics.',
+      image: '/projects/placeholder.png',
+      category: 'Residential'
+    },
+    {
+      id: 7,
+      title: 'Commercial Office Complex',
+      client: 'Corporate Client',
+      location: 'Sandton, Johannesburg',
+      service: 'Architectural design and construction',
+      year: '2023',
+      description: 'A modern office complex designed for productivity and efficiency, featuring sustainable building practices.',
+      image: '/projects/placeholder.png',
+      category: 'Commercial'
+    },
+    {
+      id: 8,
+      title: 'Retail Space Development',
+      client: 'Y.A. Moosa',
+      location: 'Johannesburg CBD',
+      service: 'Design and construction management',
+      year: '2022',
+      description: 'A contemporary retail space designed to maximize customer flow and create an engaging shopping experience.',
+      image: '/projects/placeholder.png',
+      category: 'Commercial'
+    },
+    {
+      id: 9,
+      title: 'Residential Extension Project',
+      client: 'Private Homeowner',
+      location: 'Roodepoort',
+      service: 'Extension design and construction',
+      year: '2023',
+      description: 'A seamless home extension that added valuable living space while maintaining the original architectural integrity.',
+      image: '/projects/placeholder.png',
+      category: 'Renovation'
     }
-  }
+  ]
 
   return (
-    <div className="min-h-screen pt-24 bg-background-primary transition-colors duration-300">
-      <div className="container-custom">
-        {/* Page Header */}
-        <div className="text-center mb-16">
-          <h1 className="text-5xl font-bold text-primary-900 mb-4 transition-colors duration-300">
+    <div className="min-h-screen pt-24">
+      {/* Hero Section */}
+      <section className="section-padding bg-primary-50">
+        <div className="container-custom text-center">
+          <h1 className="text-5xl font-bold text-primary-900 mb-6">
             Our Projects
           </h1>
-          <p className="text-xl text-primary-600 max-w-3xl mx-auto transition-colors duration-300">
-            A showcase of our architectural vision and construction excellence across
-            residential and commercial projects.
+          <p className="text-xl text-primary-600 max-w-4xl mx-auto">
+            Discover our portfolio of exceptional architectural designs and construction projects 
+            across Gauteng and beyond. Each project represents our commitment to giving dreams 
+            a shape of reality.
           </p>
         </div>
+      </section>
 
-        {/* Filter Buttons */}
-        <div className="flex justify-center mb-12">
-          <div className="flex flex-wrap gap-4">
-            {categories.map((category) => (
-              <button
-                key={category}
-                onClick={() => handleFilter(category)}
-                className={`px-6 py-2 rounded-full font-medium transition-colors duration-300 ${
-                  activeFilter === category
-                    ? 'bg-primary-600 text-white'
-                    : 'bg-background-secondary text-primary-700 hover:bg-primary-200'
-                }`}
-              >
-                {category.charAt(0).toUpperCase() + category.slice(1)}
-              </button>
+      {/* Projects Grid */}
+      <section className="section-padding">
+        <div className="container-custom">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {projects.map((project) => (
+              <div key={project.id} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                {/* Project Image */}
+                <div className="relative h-64 bg-primary-100">
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                  <div className="absolute top-4 right-4 z-10">
+                    <span className="bg-accent-500 text-white px-3 py-1 rounded-full text-sm font-medium">
+                      {project.category}
+                    </span>
+                  </div>
+                </div>
+
+                {/* Project Details */}
+                <div className="p-6">
+                  <h3 className="text-xl font-semibold text-primary-900 mb-3">
+                    {project.title}
+                  </h3>
+                  
+                  <div className="space-y-2 mb-4">
+                    <div className="flex items-center text-primary-600 text-sm">
+                      <User size={16} className="mr-2" />
+                      <span>Client: {project.client}</span>
+                    </div>
+                    <div className="flex items-center text-primary-600 text-sm">
+                      <MapPin size={16} className="mr-2" />
+                      <span>{project.location}</span>
+                    </div>
+                    <div className="flex items-center text-primary-600 text-sm">
+                      <Calendar size={16} className="mr-2" />
+                      <span>{project.year}</span>
+                    </div>
+                  </div>
+
+                  <p className="text-primary-700 text-sm mb-4 line-clamp-3">
+                    {project.description}
+                  </p>
+
+                  <div className="border-t pt-4">
+                    <p className="text-accent-600 font-medium text-sm">
+                      Service: {project.service}
+                    </p>
+                  </div>
+                </div>
+              </div>
             ))}
           </div>
         </div>
+      </section>
 
-        {/* Projects Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {filteredProjects.map((project) => (
-            <div
-              key={project._id}
-              className="group bg-background-secondary rounded-lg shadow-md overflow-hidden transition-colors duration-300 border border-[var(--border-color)]"
-            >
-              <Link href={`/projects/${project.slug}`}>
-                <div className="relative h-72 rounded-lg overflow-hidden mb-4">
-                  <Image
-                    src={project.mainImage || '/placeholder-project.jpg'}
-                    alt={project.title}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                  <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
-                </div>
-                <div className="px-4 pb-4">
-                  <h3 className="text-xl font-semibold text-primary-900 mb-2 transition-colors duration-300">
-                    {project.title}
-                  </h3>
-                  <p className="text-primary-500 text-sm mb-2 uppercase tracking-wide transition-colors duration-300">
-                    {project.category}
-                  </p>
-                  <p className="text-primary-700 line-clamp-3 transition-colors duration-300">
-                    {project.description}
-                  </p>
-                </div>
-              </Link>
-            </div>
-          ))}
+      {/* CTA Section */}
+      <section className="section-padding bg-primary-50">
+        <div className="container-custom text-center">
+          <h2 className="text-4xl font-bold text-primary-900 mb-4">
+            Ready to Start Your Project?
+          </h2>
+          <p className="text-xl text-primary-600 mb-8 max-w-3xl mx-auto">
+            Join our satisfied clients and let us give your dreams a shape of reality. 
+            Contact FADco today for a consultation.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/contact" className="btn-primary">
+              Get Free Quote
+            </Link>
+            <Link href="/about" className="btn-secondary">
+              Learn More About Us
+            </Link>
+          </div>
         </div>
-      </div>
+      </section>
     </div>
   )
 }

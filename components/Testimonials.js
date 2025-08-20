@@ -129,7 +129,7 @@ export default function Testimonials() {
               <div className="text-gray-600 dark:text-gray-400">Certified Builder</div>
             </div>
             <div className="text-center p-6 bg-white dark:bg-gray-900 rounded-lg shadow border border-gray-100 dark:border-gray-700">
-              <div className="text-2xl font-bold text-accent-500 mb-2">3+</div>
+              <div className="text-2xl font-bold text-accent-500 mb-2">5+</div>
               <div className="text-gray-600 dark:text-gray-400">Years Excellence</div>
             </div>
           </div>

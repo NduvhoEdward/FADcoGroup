@@ -9,7 +9,7 @@ export const metadata = {
 export default function About() {
   const stats = [
     { icon: Users, number: '100+', label: 'Projects Completed' },
-    { icon: Award, number: '3+', label: 'Years Experience' },
+    { icon: Award, number: '5+', label: 'Years Experience' },
     { icon: Clock, number: '100%', label: 'On-Time Delivery' },
     { icon: CheckCircle, number: 'NHBRC', label: 'Certified Builder' },
   ]

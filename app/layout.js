@@ -30,6 +30,7 @@ export const metadata = {
     description: 'Leading architecture and construction company',
     images: ['/og-image.jpg'],
   },
+  metadataBase: new URL('https://www.fadcogroup.co.za'), 
 }
 
 export default function RootLayout({ children }) {
