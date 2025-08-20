@@ -11,14 +11,42 @@ export default function CTA() {
           Let's discuss your vision and turn it into reality. Contact us today 
           for a free consultation and quote.
         </p>
+
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Link href="/contact" className="bg-white text-primary-600 hover:bg-primary-50 px-8 py-4 rounded-lg font-semibold transition-colors">
+          {/* Get Free Quote */}
+          <Link 
+            href="/contact" 
+            className="bg-accent-500 text-white hover:bg-accent-500 active:scale-95 active:bg-accent-500 hover:shadow-md px-8 py-4 rounded-lg font-semibold transition-all duration-150 ease-in-out"
+          >
             Get Free Quote
           </Link>
-          <Link href="/projects" className="border-2 border-white text-white hover:bg-white hover:text-primary-600 px-8 py-4 rounded-lg font-semibold transition-colors">
+
+          {/* View Portfolio */}
+          <Link 
+            href="/projects" 
+            className="border-2 border-accent-500 text-accent-600 hover:bg-accent-600 hover:text-white active:scale-95 active:bg-accent-700 hover:shadow-md px-8 py-4 rounded-lg font-semibold transition-all duration-150 ease-in-out"
+          >
             View Portfolio
           </Link>
         </div>
+
+        {/* <div className="mt-12">
+          <h3 className="text-2xl font-bold text-primary-900 mb-4">
+            Why Choose Us?
+          </h3>
+          <p className="text-primary-600 mb-4">
+            We are committed to delivering high-quality construction services that
+            meet your needs and exceed your expectations.
+          </p>
+          <ul className="list-disc list-inside text-primary-600">
+            <li>Experienced professionals</li>
+            <li>Customized solutions</li>
+            <li>Transparent pricing</li>
+            <li>Timely project completion</li>
+          </ul>
+        </div> */}
+
+
       </div>
     </section>
   )
