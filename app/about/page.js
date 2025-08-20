@@ -183,6 +183,28 @@ export default function About() {
         </div>
       </section>
 
+      {/* Area of Operation */}
+      <div className="max-w-4xl mx-auto text-center mt-12">
+        <div className="p-8 bg-gray-50 dark:bg-gray-800 rounded-2xl border border-gray-100 dark:border-gray-700">
+          <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
+            Service Areas
+          </h3>
+
+          <div className="text-gray-600 dark:text-gray-400">
+            <p className="mb-2">We proudly serve clients across:</p>
+
+            <ul className="list-disc list-outside space-y-1 pl-5 inline-block text-left">
+              <li>Johannesburg & surrounding areas</li>
+              <li>Gauteng Province</li>
+              <li>Surrounding provinces</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+
+
       {/* Team Section */}
       <section className="section-padding bg-white dark:bg-gray-900">
         <div className="container-custom">

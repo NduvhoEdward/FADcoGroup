@@ -228,7 +228,7 @@ export default function Contact() {
                 </div>
               </div>
 
-              {/* Service Areas */}
+              {/* Service Areas
               <div className="mt-12 p-6 bg-gray-50 dark:bg-gray-800 rounded-xl border border-gray-100 dark:border-gray-700">
                 <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Service Areas</h3>
                 <div className="text-gray-600 dark:text-gray-400">
@@ -239,22 +239,7 @@ export default function Contact() {
                     <li>Surrounding provinces</li>
                   </ul>
                 </div>
-              </div>
-
-              {/* Certifications */}
-              <div className="mt-8 p-6 bg-accent-500/5 dark:bg-accent-500/10 rounded-xl border border-accent-500/20">
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Certifications</h3>
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="text-center p-3 bg-white dark:bg-gray-800 rounded-lg">
-                    <div className="font-semibold text-accent-500">CIPC</div>
-                    <div className="text-sm text-gray-600 dark:text-gray-400">Registered</div>
-                  </div>
-                  <div className="text-center p-3 bg-white dark:bg-gray-800 rounded-lg">
-                    <div className="font-semibold text-accent-500">NHBRC</div>
-                    <div className="text-sm text-gray-600 dark:text-gray-400">Certified</div>
-                  </div>
-                </div>
-              </div>
+              </div> */}
 
               {/* 
               {/* Map placeholder 
@@ -265,7 +250,7 @@ export default function Contact() {
                 </div>
               </div>
               */}
-              
+
             </div>
           </div>
         </div>
