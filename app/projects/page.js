@@ -4,11 +4,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { MapPin, Calendar, User } from 'lucide-react'
 
-// export const metadata = {
-//   title: 'Projects',
-//   description: 'Explore our portfolio of architectural designs and construction projects across Gauteng and beyond',
-// }
-
 export default function Projects() {
   const projects = [
     {
@@ -113,14 +108,14 @@ export default function Projects() {
   ]
 
   return (
-    <div className="min-h-screen pt-24">
+    <div className="min-h-screen pt-24 bg-white dark:bg-gray-800">
       {/* Hero Section */}
-      <section className="section-padding bg-primary-50">
+      <section className="section-padding bg-primary-50 dark:bg-gray-700">
         <div className="container-custom text-center">
-          <h1 className="text-5xl font-bold text-primary-900 mb-6">
+          <h1 className="text-5xl font-bold text-primary-700 dark:text-white mb-6">
             Our Projects
           </h1>
-          <p className="text-xl text-primary-600 max-w-4xl mx-auto">
+          <p className="text-xl text-primary-600 dark:text-gray-300 max-w-4xl mx-auto">
             Discover our portfolio of exceptional architectural designs and construction projects 
             across Gauteng and beyond. Each project represents our commitment to giving dreams 
             a shape of reality.
@@ -133,9 +128,9 @@ export default function Projects() {
         <div className="container-custom">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project) => (
-              <div key={project.id} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              <div key={project.id} className="bg-white dark:bg-gray-900 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
                 {/* Project Image */}
-                <div className="relative h-64 bg-primary-100">
+                <div className="relative h-64 bg-primary-100 dark:bg-gray-700">
                   <Image
                     src={project.image}
                     alt={project.title}
@@ -152,31 +147,31 @@ export default function Projects() {
 
                 {/* Project Details */}
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold text-primary-900 mb-3">
+                  <h3 className="text-xl font-semibold text-primary-900 dark:text-white mb-3">
                     {project.title}
                   </h3>
                   
                   <div className="space-y-2 mb-4">
-                    <div className="flex items-center text-primary-600 text-sm">
+                    <div className="flex items-center text-primary-600 dark:text-gray-300 text-sm">
                       <User size={16} className="mr-2" />
                       <span>Client: {project.client}</span>
                     </div>
-                    <div className="flex items-center text-primary-600 text-sm">
+                    <div className="flex items-center text-primary-600 dark:text-gray-300 text-sm">
                       <MapPin size={16} className="mr-2" />
                       <span>{project.location}</span>
                     </div>
-                    <div className="flex items-center text-primary-600 text-sm">
+                    <div className="flex items-center text-primary-600 dark:text-gray-300 text-sm">
                       <Calendar size={16} className="mr-2" />
                       <span>{project.year}</span>
                     </div>
                   </div>
 
-                  <p className="text-primary-700 text-sm mb-4 line-clamp-3">
+                  <p className="text-primary-700 dark:text-gray-400 text-sm mb-4 line-clamp-3">
                     {project.description}
                   </p>
 
-                  <div className="border-t pt-4">
-                    <p className="text-accent-600 font-medium text-sm">
+                  <div className="border-t border-gray-200 dark:border-gray-700 pt-4">
+                    <p className="text-accent-600 dark:text-accent-400 font-medium text-sm">
                       Service: {project.service}
                     </p>
                   </div>
@@ -188,12 +183,12 @@ export default function Projects() {
       </section>
 
       {/* CTA Section */}
-      <section className="section-padding bg-primary-50">
+      <section className="section-padding bg-primary-50 dark:bg-gray-900">
         <div className="container-custom text-center">
-          <h2 className="text-4xl font-bold text-primary-900 mb-4">
+          <h2 className="text-4xl font-bold text-primary-900 dark:text-white mb-4">
             Ready to Start Your Project?
           </h2>
-          <p className="text-xl text-primary-600 mb-8 max-w-3xl mx-auto">
+          <p className="text-xl text-primary-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto">
             Join our satisfied clients and let us give your dreams a shape of reality. 
             Contact FADco today for a consultation.
           </p>
