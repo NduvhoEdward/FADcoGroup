@@ -4,29 +4,29 @@ import Footer from '@/components/Footer'
 
 export const metadata = {
   title: {
-    default: 'Elite Architecture & Construction',
-    template: '%s | Elite Architecture & Construction'
+    default: 'Fiya Architectural Designs and Construction',
+    template: '%s | Fiya Architectural Designs and Construction'
   },
   description: 'Leading architecture and construction company specializing in residential and commercial projects. Expert design and build services.',
   keywords: 'architecture, construction, design, building, residential, commercial',
-  authors: [{ name: 'Elite Architecture & Construction' }],
+  authors: [{ name: 'Fiya Architectural Designs and Construction' }],
   openGraph: {
     type: 'website',
     locale: 'en_US',
     url: 'https://elitearchitecture.com',
-    siteName: 'Elite Architecture & Construction',
+    siteName: 'Fiya Architectural Designs and Construction',
     images: [
       {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Elite Architecture & Construction',
+        alt: 'Fiya Architectural Designs and Construction',
       },
     ],
-  },
+  },  
   twitter: {
     card: 'summary_large_image',
-    title: 'Elite Architecture & Construction',
+    title: 'Fiya Architectural Designs and Construction',
     description: 'Leading architecture and construction company',
     images: ['/og-image.jpg'],
   },
