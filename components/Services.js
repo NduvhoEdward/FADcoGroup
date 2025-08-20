@@ -1,4 +1,5 @@
 import { PenTool, FileCheck, Hammer, Building2, Paintbrush, Home } from 'lucide-react'
+import Link from 'next/link'
 
 export default function Services() {
   const services = [
@@ -64,14 +65,27 @@ export default function Services() {
                   {service.description}
                 </p>
               </div>
-              
-              {/* Hover Effect Arrow */}
-              <div className="flex items-center text-accent-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <span className="text-sm font-medium mr-2">Learn More</span>
-                <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </div>
+
+              <Link href="/contact">
+                <div className="flex items-center text-accent-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <span className="text-sm font-medium mr-2">Learn More</span>
+                  <svg
+                    className="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-300"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </div>
+              </Link>            
+
+
             </div>
           ))}
         </div>
