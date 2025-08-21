@@ -6,7 +6,7 @@ export default function Services() {
     {
       icon: PenTool,
       title: 'Architectural Designs & Drawings',
-      description: 'Professional architectural designs and technical drawings that bring your vision to life with precision and creativity.'
+      description: 'Professional architectural designs and technical drawings by SACAP-registered professionals, bringing your vision to life with precision and creativity.'
     },
     {
       icon: FileCheck,

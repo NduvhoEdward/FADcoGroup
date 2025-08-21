@@ -119,11 +119,17 @@ export default function Testimonials() {
           </div>
 
           {/* Trust Indicators */}
-          <div className="grid md:grid-cols-3 gap-6 mt-12">
+          <div className="grid md:grid-cols-4 gap-6 mt-12">
             <div className="text-center p-6 bg-white dark:bg-gray-900 rounded-lg shadow border border-gray-100 dark:border-gray-700">
               <div className="text-2xl font-bold text-accent-500 mb-2">100%</div>
               <div className="text-gray-600 dark:text-gray-400">Client Satisfaction</div>
             </div>
+
+            <div className="text-center p-6 bg-white dark:bg-gray-900 rounded-lg shadow border border-gray-100 dark:border-gray-700">
+              <div className="text-2xl font-bold text-accent-500 mb-2">SACAP</div>
+              <div className="text-gray-600 dark:text-gray-400">Registered Professionals</div>
+            </div>
+
             <div className="text-center p-6 bg-white dark:bg-gray-900 rounded-lg shadow border border-gray-100 dark:border-gray-700">
               <div className="text-2xl font-bold text-accent-500 mb-2">NHBRC</div>
               <div className="text-gray-600 dark:text-gray-400">Certified Builder</div>

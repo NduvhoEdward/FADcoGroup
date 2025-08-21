@@ -16,7 +16,7 @@ export default function CTA() {
           {/* Get Free Quote */}
           <Link 
             href="/contact" 
-            className="bg-accent-500 text-white hover:bg-accent-500 active:scale-95 active:bg-accent-500 hover:shadow-md px-8 py-4 rounded-lg font-semibold transition-all duration-150 ease-in-out"
+            className="bg-accent-600 text-white hover:bg-accent-500 active:scale-95 active:bg-accent-500 hover:shadow-md px-8 py-4 rounded-lg font-semibold transition-all duration-150 ease-in-out"
           >
             Get Free Quote
           </Link>

@@ -49,6 +49,7 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4 text-white">Our Services</h3>
             <ul className="space-y-2">
               <li className="text-gray-300">Architectural Design</li>
+              <li className="text-gray-300">Architectural Compliance (SACAP)</li>
               <li className="text-gray-300">Plan Submissions</li>
               <li className="text-gray-300">Construction Services</li>
               <li className="text-gray-300">Home Building (NHBRC)</li>
@@ -90,6 +91,7 @@ export default function Footer() {
             </p>
             <div className="flex space-x-6 text-sm">
               <span className="text-gray-400">CIPC Registered</span>
+              <span className="text-gray-400">SACAP Registered</span>
               <span className="text-gray-400">NHBRC Certified</span>
             </div>
           </div>

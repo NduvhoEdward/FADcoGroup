@@ -14,8 +14,9 @@ export default function About() {
             <div className="space-y-4">
               <p className="text-lg text-gray-700 dark:text-gray-300">
                 FADco is a proudly black-owned architectural and construction company based in 
-                Brixton, Johannesburg. Founded and registered with the CIPC in 2020, we are 
-                also a certified home builder registered with the NHBRC.
+                Brixton, Johannesburg. Founded and registered with the CIPC in 2020, we are also 
+                a certified home builder registered with the NHBRC, and our professionals are 
+                registered with SACAP (South African Council for the Architectural Profession).
               </p>
               
               <p className="text-lg text-gray-700 dark:text-gray-300">
@@ -31,15 +32,22 @@ export default function About() {
               </p>
             </div>
 
-            <div className="grid grid-cols-2 gap-6 py-6">
+            <div className="grid grid-cols-3 gap-1 py-1">
               <div className="text-center p-4 bg-white dark:bg-gray-700 rounded-lg shadow">
                 <div className="text-2xl font-bold text-accent-500 mb-1">2020</div>
                 <div className="text-sm text-gray-600 dark:text-gray-400">Founded</div>
               </div>
+
+              <div className="text-center p-4 bg-white dark:bg-gray-700 rounded-lg shadow">
+                <div className="text-2xl font-bold text-accent-500 mb-1">SACAP</div>
+                <div className="text-sm text-gray-600 dark:text-gray-400">Registered Professional</div>
+              </div>
+
               <div className="text-center p-4 bg-white dark:bg-gray-700 rounded-lg shadow">
                 <div className="text-2xl font-bold text-accent-500 mb-1">NHBRC</div>
                 <div className="text-sm text-gray-600 dark:text-gray-400">Certified</div>
               </div>
+
             </div>
             
             <Link href="/about" className="btn-primary inline-block">

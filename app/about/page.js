@@ -11,6 +11,7 @@ export default function About() {
     { icon: Users, number: '100+', label: 'Projects Completed' },
     { icon: Award, number: '5+', label: 'Years Experience' },
     { icon: Clock, number: '100%', label: 'On-Time Delivery' },
+    { icon: CheckCircle, number: 'SACAP', label: 'Registered Professional' },
     { icon: CheckCircle, number: 'NHBRC', label: 'Certified Builder' },
   ]
 
@@ -53,7 +54,7 @@ export default function About() {
           </div>
 
           {/* Stats */}
-          <div className="grid md:grid-cols-4 gap-8 mb-16">
+          <div className="grid md:grid-cols-5 gap-8 mb-16">
             {stats.map((stat, index) => (
               <div key={index} className="text-center p-6 bg-white dark:bg-gray-900 rounded-xl shadow-lg border border-gray-100 dark:border-gray-700">
                 <stat.icon size={48} className="text-accent-500 mx-auto mb-4" />
@@ -75,8 +76,8 @@ export default function About() {
                 <p>
                   Founded in 2020, FADco (Fiya Architectural Designs and Construction) is a 
                   proudly black-owned architectural and construction company based in Brixton, 
-                  Johannesburg. We are registered with the CIPC and certified as home builders 
-                  with the NHBRC.
+                  Johannesburg. We are registered with the CIPC, certified as home builders with the NHBRC, 
+                  and registered professionals with SACAP.
                 </p>
                 <p>
                   Despite facing significant challenges, including the COVID-19 pandemic and 

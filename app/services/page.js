@@ -1,4 +1,4 @@
-import { PenTool, FileCheck, Hammer, Building2, PaintBucket, Home, Wrench, Shield } from 'lucide-react'
+import { PenTool, FileCheck, Hammer, Building2, PaintBucket, Home, Wrench, Shield, BadgeCheck, CheckCircle} from 'lucide-react'
 import Link from 'next/link'
 
 export const metadata = {
@@ -17,7 +17,7 @@ export default function Services() {
     {
       icon: FileCheck,
       title: 'Plan Submissions & Approvals',
-      description: 'Complete handling of plan submissions to municipalities and institutions, ensuring all regulatory requirements are met efficiently.',
+      description: 'Our SACAP-registered professionals handle all aspects of plan submissions to municipalities and institutions, ensuring all regulatory requirements are met efficiently.',
       features: ['Municipal Submissions', 'Compliance Checking', 'Approval Follow-ups', 'Documentation Management']
     },
     {
@@ -190,12 +190,19 @@ export default function Services() {
             <p className="text-gray-600 dark:text-gray-400">Trusted credentials ensuring quality and compliance</p>
           </div>
           
-          <div className="grid md:grid-cols-2 gap-8 max-w-2xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-8 max-w-3xl mx-auto">
             <div className="text-center p-8 bg-gray-50 dark:bg-gray-800 rounded-xl border border-gray-100 dark:border-gray-700">
               <Shield size={48} className="text-accent-500 mx-auto mb-4" />
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">CIPC Registered</h3>
               <p className="text-gray-600 dark:text-gray-400">Officially registered with the Companies and Intellectual Property Commission</p>
             </div>
+
+            <div className="text-center p-8 bg-gray-50 dark:bg-gray-800 rounded-xl border border-gray-100 dark:border-gray-700">
+              <CheckCircle size={48} className="text-accent-500 mx-auto mb-4" />
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">SACAP Registered</h3>
+              <p className="text-gray-600 dark:text-gray-400">Registered with the South African Council for the Architectural Profession</p>
+            </div>
+
             <div className="text-center p-8 bg-gray-50 dark:bg-gray-800 rounded-xl border border-gray-100 dark:border-gray-700">
               <Home size={48} className="text-accent-500 mx-auto mb-4" />
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">NHBRC Certified</h3>
