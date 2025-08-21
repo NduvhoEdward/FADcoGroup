@@ -22,13 +22,13 @@ module.exports = {
           900: 'rgb(var(--color-primary-900) / <alpha-value>)',
         },
         accent: {
-          400: '#fbbf24',
-          500: '#f59e0b',
-          600: '#d97706',
+          400: 'var(--color-accent-400)',
+          500: 'var(--color-accent-500)',
+          600: 'var(--color-accent-600)',
         },
         secondary: {
-          500: '#10b981',
-          600: '#059669',
+          500: 'var(--color-secondary-500)',
+          600: 'var(--color-secondary-600)',
         },
         background: {
           primary: 'var(--bg-primary)',
