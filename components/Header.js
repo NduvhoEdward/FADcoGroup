@@ -38,9 +38,13 @@ export default function Header() {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-accent-500 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">F</span>
-            </div>
+              <div className="w-12 h-12 rounded-lg flex items-center justify-center" style={{backgroundColor: '#1f6b60'}}>
+                <img 
+                  src="logo.jpg" 
+                  alt="FADco Logo" 
+                  className="w-10 h-10 object-contain"
+                />
+              </div>
             <div className="flex flex-col">
               <span className="text-xl font-bold text-gray-900 dark:text-white">FADco</span>
               <span className="text-xs text-gray-600 dark:text-gray-400 -mt-1">Fiya Architectural Designs</span>

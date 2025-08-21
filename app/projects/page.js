@@ -14,7 +14,7 @@ export default function Projects() {
       service: 'House plan design and drawing',
       year: '2023',
       description: 'A beautiful modern family home featuring open-plan living spaces, contemporary design elements, and sustainable building practices.',
-      image: '/projects/placeholder.png',
+      image: '/projects/christa_roos.png',
       category: 'Residential'
     },
     {
@@ -25,7 +25,7 @@ export default function Projects() {
       service: 'House plan design and drawing',
       year: '2023',
       description: 'A stunning contemporary home that blends traditional African architectural elements with modern functionality.',
-      image: '/projects/placeholder.png',
+      image: '/projects/vincent_khumalo.png',
       category: 'Residential'
     },
     {
@@ -36,7 +36,7 @@ export default function Projects() {
       service: 'House plan design and drawing',
       year: '2023',
       description: 'An elegant villa design featuring spacious rooms, natural lighting, and premium finishes throughout.',
-      image: '/projects/placeholder.png',
+      image: '/projects/lindiwe_buhlungu.png',
       category: 'Residential'
     },
     {
@@ -47,7 +47,7 @@ export default function Projects() {
       service: 'Building, Thatching, Tiling ceiling',
       year: '2022',
       description: 'A comprehensive construction project including traditional thatching, modern tiling, and complete interior finishing.',
-      image: '/projects/placeholder.png',
+      image: '/projects/lesley_peter_edmonds.png',
       category: 'Construction'
     },
     {
@@ -58,7 +58,7 @@ export default function Projects() {
       service: 'Building & Designing',
       year: '2022',
       description: 'An upmarket residential development combining innovative design with premium construction standards.',
-      image: '/projects/placeholder.png',
+      image: '/projects/mark_maiden.png',
       category: 'Residential'
     },
     {
@@ -69,42 +69,42 @@ export default function Projects() {
       service: 'House plan design and drawing',
       year: '2023',
       description: 'A thoughtfully designed home that exceeded client expectations with innovative spatial planning and beautiful aesthetics.',
-      image: '/projects/placeholder.png',
+      image: '/projects/ne_ramashia.png',
       category: 'Residential'
     },
-    {
-      id: 7,
-      title: 'Commercial Office Complex',
-      client: 'Corporate Client',
-      location: 'Sandton, Johannesburg',
-      service: 'Architectural design and construction',
-      year: '2023',
-      description: 'A modern office complex designed for productivity and efficiency, featuring sustainable building practices.',
-      image: '/projects/placeholder.png',
-      category: 'Commercial'
-    },
-    {
-      id: 8,
-      title: 'Retail Space Development',
-      client: 'Y.A. Moosa',
-      location: 'Johannesburg CBD',
-      service: 'Design and construction management',
-      year: '2022',
-      description: 'A contemporary retail space designed to maximize customer flow and create an engaging shopping experience.',
-      image: '/projects/placeholder.png',
-      category: 'Commercial'
-    },
-    {
-      id: 9,
-      title: 'Residential Extension Project',
-      client: 'Private Homeowner',
-      location: 'Roodepoort',
-      service: 'Extension design and construction',
-      year: '2023',
-      description: 'A seamless home extension that added valuable living space while maintaining the original architectural integrity.',
-      image: '/projects/placeholder.png',
-      category: 'Renovation'
-    }
+    // {
+    //   id: 7,
+    //   title: 'Commercial Office Complex',
+    //   client: 'Corporate Client',
+    //   location: 'Sandton, Johannesburg',
+    //   service: 'Architectural design and construction',
+    //   year: '2023',
+    //   description: 'A modern office complex designed for productivity and efficiency, featuring sustainable building practices.',
+    //   image: '/projects/placeholder.png',
+    //   category: 'Commercial'
+    // },
+    // {
+    //   id: 8,
+    //   title: 'Retail Space Development',
+    //   client: 'Y.A. Moosa',
+    //   location: 'Johannesburg CBD',
+    //   service: 'Design and construction management',
+    //   year: '2022',
+    //   description: 'A contemporary retail space designed to maximize customer flow and create an engaging shopping experience.',
+    //   image: '/projects/placeholder.png',
+    //   category: 'Commercial'
+    // },
+    // {
+    //   id: 9,
+    //   title: 'Residential Extension Project',
+    //   client: 'Private Homeowner',
+    //   location: 'Roodepoort',
+    //   service: 'Extension design and construction',
+    //   year: '2023',
+    //   description: 'A seamless home extension that added valuable living space while maintaining the original architectural integrity.',
+    //   image: '/projects/placeholder.png',
+    //   category: 'Renovation'
+    // }
   ]
 
   return (
