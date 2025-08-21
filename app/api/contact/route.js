@@ -22,7 +22,7 @@ export async function POST(request) {
 
     const response = await resend.emails.send({
       from: 'FADco Contact Form <onboarding@resend.dev>',
-      to: 'Nduvho.Ramashia@gmail.com', // Change to your receiving email
+      to: 'nduvho.ramashia@gmail.com', // Change to your receiving email
       subject: `New Contact Form Submission from ${name} From FADcoGroup.co.za`,
       html: `
         <h2>New Contact Form Submission</h2>
