@@ -20,7 +20,7 @@ export async function POST(request) {
     // Send the email using Resend
     console.log("📩 Attempting to send email with Resend...");
 
-    await resend.emails.send({
+    const response = await resend.emails.send({
       from: 'FADco Contact Form <onboarding@resend.dev>',
       to: 'Edwardn411@gmail.com', // Change to your receiving email
       subject: `New Contact Form Submission from ${name} From FADcoGroup.co.za`,
@@ -35,6 +35,7 @@ export async function POST(request) {
         <p><em>Submitted on ${new Date().toLocaleString()}</em></p>
       `,
     });
+
     console.log("✅ Resend response:", response);
 
     return NextResponse.json(
