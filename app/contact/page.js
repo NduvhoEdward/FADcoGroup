@@ -201,7 +201,7 @@ export default function Contact() {
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Phone</h3>
                     <div className="text-gray-600 dark:text-gray-400 space-y-1">
-                      <p>Office: +27 11 839 6612</p>
+                      {/* <p>Office: +27 11 839 6612</p> */}
                       <p>Mobile: +27 82 595 3955</p>
                     </div>
                   </div>
@@ -267,8 +267,8 @@ export default function Contact() {
             and experience the difference of working with certified professionals.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="tel:+27118396612" className="bg-white text-accent-500 hover:bg-gray-100 px-8 py-4 rounded-lg font-semibold transition-colors">
-              Call Now: 011 839 6612
+            <a href="tel:+27825953955" className="bg-white text-accent-500 hover:bg-gray-100 px-8 py-4 rounded-lg font-semibold transition-colors">
+              Call Now: 082 595 3955
             </a>
             <a href="mailto:fiyadesigns1@gmail.com" className="border-2 border-white text-white hover:bg-white hover:text-accent-500 px-8 py-4 rounded-lg font-semibold transition-colors">
               Send Email
