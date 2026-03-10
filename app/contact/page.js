@@ -2,11 +2,6 @@
 import { useState } from 'react'
 import { MapPin, Phone, Mail, Clock } from 'lucide-react'
 
-// export const metadata = {
-//   title: 'Contacts',
-//   description: 'Get in touch with FADco for all your architectural and construction needs.',
-// }
-
 export default function Contact() {
   const [formData, setFormData] = useState({
     name: '',

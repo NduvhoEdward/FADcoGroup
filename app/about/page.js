@@ -3,7 +3,7 @@ import { Users, Award, Clock, CheckCircle, Target, Eye, Heart, Lightbulb } from 
 
 export const metadata = {
   title: 'About Us',
-  description: 'Learn about FADco - Fiya Architectural Designs and Construction. Our story, values, and commitment to giving your dreams a shape of reality.',
+  description: 'Meet FADco - SACAP-registered architects and NHBRC-certified builders with 5+ years delivering 100+ projects. Our mission: transforming architectural visions into reality.'
 }
 
 export default function About() {

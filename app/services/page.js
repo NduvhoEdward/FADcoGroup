@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export const metadata = {
   title: 'Services',
-  description: 'Comprehensive architectural design and construction services by FADco. From plans to construction, we give your dreams a shape of reality.',
+  description: 'Complete architecture and construction services: designs, 3D renders, plan approvals, bricklaying, roofing, tiling, and full building solutions. Professional and certified.',
 }
 
 export default function Services() {
