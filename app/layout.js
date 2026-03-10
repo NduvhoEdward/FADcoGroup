@@ -11,6 +11,10 @@ export const metadata = {
   description: 'Leading architecture and construction company specializing in residential and commercial projects. Expert design and build services.',
   keywords: 'architecture, construction, design, building, residential, commercial',
   authors: [{ name: 'Fiya Architectural Designs and Construction' }],
+  icons: {
+    icon: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
+  },
   openGraph: {
     type: 'website',
     locale: 'en_US',
