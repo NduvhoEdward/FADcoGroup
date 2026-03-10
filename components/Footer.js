@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import {
   Facebook,
   Twitter,
@@ -21,9 +22,11 @@ export default function Footer() {
                 className="w-12 h-12 rounded-lg flex items-center justify-center"
                 style={{ backgroundColor: "#1f6b60" }}
               >
-                <img
+                <Image
                   src="logo.jpg"
                   alt="FADco Logo"
+                  width={40}
+                  height={40}
                   className="w-10 h-10 object-contain"
                 />
               </div>
